@@ -26,6 +26,7 @@
       background: linear-gradient(90deg, #ccc, #fff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: glitch 2s infinite;
     }
     .tagline {
       font-size: 1.2rem;
@@ -45,11 +46,11 @@
       padding: 20px;
       border: 1px solid #222;
       border-radius: 10px;
-      transition: 0.3s ease;
+      transition: transform 0.3s ease, border-color 0.3s;
     }
     .product:hover {
       transform: translateY(-5px);
-      border-color: #444;
+      border-color: #555;
     }
     .product img {
       width: 100%;
@@ -59,6 +60,21 @@
       margin-top: 10px;
       font-size: 1.1rem;
       color: #fff;
+    }
+    .btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: transparent;
+      border: 1px solid #888;
+      color: #eee;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background: #eee;
+      color: #111;
     }
     .footer {
       text-align: center;
@@ -77,29 +93,6 @@
     .contact a:hover {
       color: #fff;
     }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>BLACKRUN</h1>
-    <div class="tagline">Minimal Power. Phantom Presence.</div>
-  </header>
 
-  <section class="products">
-    <div class="product">
-      <img src="https://cdn.shopify.com/s/files/1/0680/4150/7113/files/titan-black.jpg?v=1715983200" alt="Titan Black Bracelet" />
-      <div class="product-title">Titan Black Magnetic Bracelet</div>
-    </div>
-    <!-- Add more products here -->
-  </section>
-
-  <div class="contact">
-    <p>Follow the Phantom:</p>
-    <a href="https://www.instagram.com/yourbrand" target="_blank">@yourbrand</a>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 BlackRun. Powered by Phantom Alloy.
-  </div>
-</body>
-</html>
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px #ff
