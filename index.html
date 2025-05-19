@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BlackRun</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlackRun - Dropshipping and Brand Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     * {
       margin: 0; padding: 0;
@@ -15,6 +16,7 @@
       color: #f1f1f1;
       font-family: 'Orbitron', sans-serif;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
     header {
       text-align: center;
@@ -33,11 +35,27 @@
       color: #aaa;
       margin-top: 10px;
     }
-    .products {
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #888;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 1.2px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section.products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
-      padding: 40px 20px;
+      padding: 0 20px 80px;
       max-width: 1000px;
       margin: auto;
     }
@@ -55,14 +73,15 @@
     .product img {
       width: 100%;
       border-radius: 8px;
+      display: block;
+      margin-bottom: 10px;
     }
     .product-title {
-      margin-top: 10px;
       font-size: 1.1rem;
       color: #fff;
+      margin-bottom: 10px;
     }
     .btn {
-      margin-top: 10px;
       padding: 10px 20px;
       background: transparent;
       border: 1px solid #888;
@@ -71,29 +90,39 @@
       cursor: pointer;
       border-radius: 6px;
       transition: 0.3s ease;
+      width: 100%;
     }
     .btn:hover {
       background: #eee;
       color: #111;
     }
-    .footer {
+    section.about {
+      max-width: 800px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #eee;
+    }
+    section.about h2 {
       text-align: center;
-      padding: 40px 20px;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+    }
+    section.about p {
+      margin-bottom: 16px;
+      font-size: 1rem;
+      color: #bbb;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
       font-size: 0.9rem;
       color: #666;
+      border-top: 1px solid #222;
+      font-family: Arial, sans-serif;
     }
-    .contact {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .contact a {
-      color: #888;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      color: #fff;
-    }
-
     @keyframes glitch {
       0% { text-shadow: 2px 2px #ff0000, -2px -2px #00fff7; }
       50% { text-shadow: -2px -2px #ff00ff, 2px 2px #00ff88; }
@@ -102,27 +131,36 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>BLACKRUN</h1>
-    <div class="tagline">Minimal Power. Phantom Presence.</div>
-  </header>
 
-  <section class="products">
-    <div class="product">
-      <img src="https://cdn.shopify.com/s/files/1/0680/4150/7113/files/titan-black.jpg?v=1715983200" alt="Titan Black Bracelet" />
-      <div class="product-title">Titan Black Magnetic Bracelet</div>
-      <button class="btn" onclick="window.location.href='https://your-checkout-link.com'">Buy Now</button>
-    </div>
-  </section>
+<header>
+  <h1>BLACKRUN</h1>
+  <div class="tagline">Minimal Power. Phantom Presence.</div>
+</header>
 
-  <div class="contact">
-    <p>Enter the Signal:</p>
-    <a href="about.html">About the Brand</a> | 
-    <a href="https://instagram.com/yourbrand" target="_blank">@yourbrand</a>
+<nav>
+  <a href="#products">Products</a>
+  <a href="#about">About</a>
+</nav>
+
+<section id="products" class="products">
+  <div class="product">
+    <img src="https://cdn.shopify.com/s/files/1/0680/4150/7113/files/titan-black.jpg?v=1715983200" alt="Titan Black Magnetic Bracelet" />
+    <div class="product-title">Titan Black Magnetic Bracelet</div>
+    <button class="btn" onclick="window.location.href='https://your-checkout-link.com'">Buy Now</button>
   </div>
+  <!-- Add more products here if needed -->
+</section>
 
-  <div class="footer">
-    &copy; 2025 BlackRun. Powered by Phantom Alloy.
-  </div>
+<section id="about" class="about">
+  <h2>About BlackRun</h2>
+  <p>BlackRun is a silent force in the world of minimal power and aesthetic dropshipping. We design sharp, bold accessories for those who lead without needing the spotlight.</p>
+  <p>Every product reflects a clean identity: low-key, luxurious, and intentional. From concept to checkout, our brand moves like a phantom — seen only by those who know.</p>
+  <p>You don't chase. You attract. And when you're wearing BlackRun, you're already chosen.</p>
+</section>
+
+<footer>
+  &copy; 2025 BlackRun. Powered by Phantom Alloy.
+</footer>
+
 </body>
 </html>
