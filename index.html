@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlackRun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #0a0a0a;
+      color: #f1f1f1;
+      font-family: 'Orbitron', sans-serif;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #ccc, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-top: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #222;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      border-color: #444;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product-title {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .contact a {
+      color: #888;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BLACKRUN</h1>
+    <div class="tagline">Minimal Power. Phantom Presence.</div>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://cdn.shopify.com/s/files/1/0680/4150/7113/files/titan-black.jpg?v=1715983200" alt="Titan Black Bracelet" />
+      <div class="product-title">Titan Black Magnetic Bracelet</div>
+    </div>
+    <!-- Add more products here -->
+  </section>
+
+  <div class="contact">
+    <p>Follow the Phantom:</p>
+    <a href="https://www.instagram.com/yourbrand" target="_blank">@yourbrand</a>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 BlackRun. Powered by Phantom Alloy.
+  </div>
+</body>
+</html>
